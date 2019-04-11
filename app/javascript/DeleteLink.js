@@ -31,9 +31,9 @@ export default class DeleteLink extends Component {
 
     render() {
         return (
-            <div className='link' onClick={this.handleDelete}>
+            <a onClick={this.handleDelete}>
                 Delete
-            </div>
+            </a>
         )
     }
 }

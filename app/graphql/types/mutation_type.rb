@@ -1,5 +1,6 @@
 # module Types
 #   class MutationType < Types::BaseObject
+#     field :createPost, mutation: Mutations::CreatePost
 #     field :deletePost, mutation: Mutations::DeletePost
 #     # TODO: remove me
 #     field :test_field, String, null: false,
@@ -14,4 +15,5 @@ Types::MutationType = GraphQL::ObjectType.define do
   name "Mutation"
 
   field :deletePost, Mutations::DeletePost.field
+  field :upsertPost, Mutations::UpsertPost.field
 end

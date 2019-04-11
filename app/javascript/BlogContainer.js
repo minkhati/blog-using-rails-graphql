@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import DeleteLink from './DeleteLink'
+import Form from './Form'
+import PostRow from './PostRow'
 
 export default class BlogContainer extends Component {
 	state = {
@@ -37,18 +38,20 @@ export default class BlogContainer extends Component {
 	}
 
 	render() {
-		const posts = this.state.posts
-
 		return (
 			<div>
-				<h1>Hello again from blogcontainer</h1>
-				{posts.map((post, index) => (
-					<div key={index}>
-						<h2>{post.title}</h2> 
-						<DeleteLink postId={post.id} getAllPosts={this.getAllPosts} />
-						<p>{post.content}</p>
-						<hr />
-					</div>
+				<h1>Sample Blog Application using Rails and GrpahQL</h1>
+				<br />
+
+				<Form getAllPosts={this.getAllPosts} />
+				<br />
+
+				{this.state.posts.map((post, index) => (
+					<PostRow
+						post={post}
+						key={index}
+						getAllPosts={this.getAllPosts}
+					/>
 				))}
 			</div>
 		)
