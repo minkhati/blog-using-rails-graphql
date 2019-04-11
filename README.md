@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-<!--
+
 $ rails new Blogger --webpack=react
 $ include the following gems in the gemfile
     gem 'graphql'
@@ -58,4 +58,4 @@ $ After that create React Components and GraphQL Mutations and Types etc.
 
 $ need to update environment/development.rb file with config.webpacker.check_yarn_integrity = false
 $ do not include /public/packs in .gitignore
--->
+
