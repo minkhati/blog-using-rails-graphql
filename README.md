@@ -56,4 +56,6 @@ $ and ./bin/webpack-dev-server in another terminal tab
 $ now you can see the index view page loaded in the browser.
 $ After that create React Components and GraphQL Mutations and Types etc.
 
+$ need to update environment/development.rb file with config.webpacker.check_yarn_integrity = false
+$ do not include /public/packs in .gitignore
 -->
