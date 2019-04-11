@@ -12,7 +12,7 @@ gem 'sqlite3'
 gem 'graphql'
 
 gem "react_on_rails", "11.0.0"
-gem "webpacker", "~> 3"
+gem "webpacker", "~> 3.0"
 gem 'mini_racer', platforms: :ruby
 
 gem 'puma', '~> 3.11'
